@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Categories.scss";
-import Cards from "../Cards/Cards";
 import { IoIosCloseCircleOutline } from "react-icons/io";
 
 const Categories = ({ open, setOpen }) => {
