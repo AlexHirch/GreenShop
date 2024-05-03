@@ -18,7 +18,7 @@
     width: 25%;
     padding: 20px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    background-color: rgb(230, 15, 15);
+    background-color: transparent;
     position: relative;
     transition: all .3s;
     border-radius: 10px;
@@ -157,7 +157,6 @@
         border-radius: 10px;
         .categorie{
             border-radius: 10px;
-            background-color: #00ac22;
             h3{
                 span{
                     display: block;
