@@ -1,0 +1,140 @@
+.Navbar{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #46a35997;
+    font-family: Arial, Helvetica, sans-serif;
+    ul{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+        li{
+            display: flex;
+            a{
+                color: #3D3D3D;
+                font-size: 18px;
+                padding: 15px 0px;
+                border-bottom: 2px solid transparent;
+            }
+            a.active{
+                color: #46A358;
+                font-size: 18px;
+                padding: 20px 0px;
+                border-bottom: 2px solid #46A358;
+            }
+        }
+    }
+    .nav{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+        .btn:hover{
+            text-shadow: 0px 0px 10px green;
+        }
+        a.btn{
+            font-size: 20px;
+            &:hover{
+                text-shadow: 0px 0px 10px rgb(0, 0, 0);
+            }
+            .like{
+                position: absolute;
+                font-size: 13px;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                top: 0;
+                left: 52px;
+                background-color: #46A358;
+                border: 2px solid white;
+                border-radius: 10px;
+                padding: 1px;
+            }
+        }
+        button{
+            display: flex;
+            align-items: center;
+            padding: 8px 20px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(137.05deg, rgba(70, 163, 88, 0.45) -24.6%, #46A358 100%);
+            color: white;
+            box-shadow: 0 0 5px #6cb97c;
+            transition: all .3s;
+            span{
+                font-size: 16px;
+            }
+            &:hover{
+                background-color: #46a359ba;
+                box-shadow: 0 0 20px #00ac22;
+            }
+        }
+    }
+}
+.navmobile{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .Navbar{
+        display: none;
+    }
+    .navmobile{
+        padding: 20px;
+        display: flex;
+        gap: 2%;
+        form{
+            background-color: #ececec;
+            border-radius: 10px;
+            width: 88%;
+            height: 40px;
+            display: flex;
+            input{
+                padding-left: 10px;
+                width: 90%;
+                height: 40px;
+                background-color: transparent;
+                border: none;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                outline: none;
+                font-size: 18px;
+                color: #3D3D3D;
+            }
+            button{
+                width: 10%;
+                height: 40px;
+                border: none;
+                background-color: transparent;
+                font-size: 24px;
+                color: #5d5d5d;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+            }
+        }
+        .LuSettings2{
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(137.05deg, rgba(70, 163, 88, 0.45) -24.6%, #46A358 100%);
+            border: none;
+            box-shadow: 0 0 5px #6cb97c;
+            border-radius: 10px;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .2s;
+            &:active{
+                box-shadow: 0 0 10px #46A358;
+            }
+        }
+    }
+}

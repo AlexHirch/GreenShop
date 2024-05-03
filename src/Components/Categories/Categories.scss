@@ -1,0 +1,191 @@
+.div{
+    display: flex;
+    width: 100%;
+    .div1{
+        width: 75%;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .path{
+        width: 100%;
+        padding: 60px 20px 40px 20px;
+    }
+}
+
+.Categories {
+    width: 25%;
+    padding: 20px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: white;
+    position: relative;
+    transition: all .3s;
+    .categorie {
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        row-gap: 20px;
+        background-color: #FBFBFB;
+        border-radius: 10px;
+        padding: 20px;
+
+        h3 {
+            color: #3D3D3D;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 16px;
+            text-align: left;
+            span{
+                display: none;
+                position: absolute;
+                rotate: 360deg;
+                transition: all .3s;
+                right: 0px;
+                top: 10px;
+            }
+            &.h31 {
+                padding-top: 30px;
+            }
+        }
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            color: #3D3D3D;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 40px;
+            text-align: left;
+
+
+            &.active {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px;
+                color: #46A358;
+                font-weight: 700;
+
+            }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            row-gap: 10px;
+
+            p {
+                padding: 20px 0 0 0;
+                justify-content: start;
+
+                span {
+                    color: #46A358;
+                    font-weight: 700;
+                    padding-left: 10px;
+                }
+            }
+
+            button {
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 20px;
+                font-size: 20px;
+                border: none;
+                border-radius: 10px;
+                background: linear-gradient(137.05deg, rgba(70, 163, 88, 0.45) -24.6%, #46A358 100%);
+                color: white;
+                box-shadow: 0 0 5px #6cb97c;
+                transition: all .3s;
+
+                span {
+                    font-size: 16px;
+                }
+
+                &:hover {
+                    background-color: #46a359ba;
+                    box-shadow: 0 0 20px #00ac22;
+                }
+            }
+        }
+
+        .img {
+            left: -0px;
+            bottom: -470px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: static;
+            overflow: hidden;
+            height: 470px;
+
+            img {
+                position: static;
+                width: 380px;
+                height: 470px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .div{
+        .div1{
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            row-gap: 10px;
+        }
+    }
+    .Categories {
+        padding: 0;
+        position: absolute;
+        display: flex;
+        top: -1200px;
+        z-index: 3;
+        right: -310px;
+        flex-direction: column;
+        box-shadow: -30px 0 100px black;
+        transition: right .2s;
+        .categorie{
+            h3{
+                span{
+                    display: block;
+                    rotate: 0deg;
+                    right: 20px;
+                    font-size: 30px;
+                }
+            }
+        }
+        .img {
+            height: 0px;
+            width: 10px;
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            display: none;
+
+            img {
+                width: 10px;
+                height: 0px;
+                top: 0;
+                position: unset;
+                display: none;
+                position: static;
+            }
+        }
+
+        &.viev {
+            top: 0;
+            display: flex;
+            right: 0px;
+            width: 300px;
+        }
+    }
+}

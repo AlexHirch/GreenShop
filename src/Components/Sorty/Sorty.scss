@@ -1,0 +1,38 @@
+.sorty{
+    width: 100%;
+}
+.sorty1{
+    width: 100%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        gap: 20px;
+        li.active{
+            color: #46A358;
+            font-weight: 700;
+            border-bottom: 2px solid #46A358;
+        }
+    }
+    div{
+        display: flex;
+        select{
+            border: none;
+            font-size: 16px;
+            color: rgb(147, 147, 147);
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .sorty1{
+        ul{
+            font-size: 14px;
+        }
+        div{
+            display: none;
+        }
+    }
+}

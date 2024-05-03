@@ -1,0 +1,44 @@
+.card {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(239, 239, 239, 0.774);
+
+    p {
+        padding: 10px 0;
+        color: #3D3D3D;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+
+        &:nth-child(3) {
+            color: #46A358;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 16px;
+            text-align: left;
+
+        }
+        span{
+            text-decoration: line-through;
+            color: #a1a1a1;
+            font-weight: 400;
+        }
+    }
+
+    img {
+        width: 100%;
+        border-radius: 7px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        padding: 5px;
+        width: 170px;
+        height: 240px;
+    }
+}
