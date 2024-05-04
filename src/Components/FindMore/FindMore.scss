@@ -1,0 +1,106 @@
+.FindMore {
+    width: 100%;
+    height: auto;
+    padding: 80px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .boxes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+
+        .box {
+            display: flex;
+            align-items: center;
+            width: 49%;
+            background-color:  rgba(239, 239, 239, 0.774);
+            border-radius: 20px;
+            position: relative;
+            justify-content: end;
+            .img{
+                width: 40%;
+                position: absolute;
+                left: 14px;
+                bottom: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+                opacity: 1;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            }
+            .text {
+                width: 60%;
+                text-align: end;
+                display: flex;
+                padding: 20px;
+                flex-direction: column;
+                gap: 20px;
+                font-weight: 400;
+                line-height: 24px;
+                align-items: end;
+                p {
+                    &:first-child {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+
+                    &:nth-child(2) {
+                        font-size: 14px;
+                        width: 80%;
+                        margin-left: 20%;
+                    }
+                }
+
+                button {
+
+                    width: 160px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px 20px;
+                    font-size: 20px;
+                    border: none;
+                    border-radius: 10px;
+                    background: linear-gradient(137.05deg, rgb(57, 182, 82) -24.6%, #068c21 100%);
+                    color: white;
+                    box-shadow: 0 0 5px #6cb97c;
+                    transition: all .3s;
+
+                    span {
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        background-color: #46a359ba;
+                        box-shadow: 0 0 20px #00ac22;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .FindMore{
+        .boxes{
+            flex-wrap: wrap;
+            .box{
+                width: 100%;
+                flex-wrap: wrap;
+                &:first-child{
+                    margin-bottom: 20px;
+                }
+                .img{
+                    width: 100%;
+                    position: static;
+                    padding: 10px;
+                }
+                .text{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
