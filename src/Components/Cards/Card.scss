@@ -19,8 +19,8 @@
         padding: 0 20px;
         justify-content: space-around;
         position: absolute;
-        top: 130px;
-        transition: all .3s;
+        top: 230px;
+        transition: all .5s;
         opacity: 0;
         button{
             background-color: rgba(195, 201, 194, 0.795);
@@ -30,9 +30,9 @@
             display: flex;
             align-items: center;    
             justify-content: center;
-            font-size: 18px;
-            width: 30px;
-            height: 30px;
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
             color: white;
             transition: all .3s;
             &:hover{
@@ -77,5 +77,12 @@
         padding: 5px;
         width: 170px;
         height: auto;
+        .like{
+            top: 130px;
+            button{
+                width: 30px;
+                height: 30px;
+            }
+        }
     }
 }

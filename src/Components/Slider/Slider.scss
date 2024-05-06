@@ -70,7 +70,6 @@
 
             &:hover {
                 background-color: #46a359ba;
-                color: #454545;
             }
         }
     }
@@ -177,7 +176,8 @@
                 }
     
                 &:hover {
-                    background-color: #46a359ba;
+                    background-color: transparent;
+                    text-shadow: 0 0 10px #121212;
                     color: #454545;
                 }
             }

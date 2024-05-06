@@ -5,6 +5,7 @@ import Cards from "../../Components/Cards/Cards";
 import Sorty from "../../Components/Sorty/Sorty";
 import Path from "../../Components/Sorty/Path/Path";
 import FindMore from "../../Components/FindMore/FindMore";
+import OurBlogs from "../../Components/OurBlog/OurBlogs";
 
 const Home = ({ open, setOpen }) => {
   return (
@@ -31,6 +32,7 @@ const Home = ({ open, setOpen }) => {
         </div>
       </div>
       <FindMore/>
+      <OurBlogs/>
     </div>
   );
 };
