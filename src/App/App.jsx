@@ -6,6 +6,7 @@ import Home from '../Pages/Home/Home'
 import Shop from '../Pages/Shop/Shop'
 import PlantCare from '../Pages/Plant Care/PlantCare';
 import Blog from '../Pages/Blog/Blog';
+import Footer from '../Components/Footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
         <Route path='/plant_care' element={<PlantCare/>}/>
         <Route path='/blog' element={<Blog/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
