@@ -9,11 +9,87 @@
         font-weight: 400;
         text-align: left;
         color: #3D3D3D;
-        span{
+
+        span {
             font-weight: 700;
         }
     }
-    .Product{
-        background-color: red;
+
+    .Product {
+        .product-img{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .box-img{
+                display: flex;
+                width: 50%;
+                padding: 10px 10px 10px 0;
+                .left{
+                    width: 20%;
+                    height: auto;
+                    img{
+                        width: 100%;
+                        padding: 10px;
+                        &.active{
+                            border: 1px solid #46A358;
+                        }
+                    }
+                }
+                .right{
+                    width: 80%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }   
+            .img-text{
+                width: 50%;
+                padding: 10px 0 10px 10px;
+            }
+        }
+
+
+        .product-text {
+            width: 100%;
+
+            .product-description {
+                width: 100%;
+
+                h3 {
+                    padding-top: 20px;
+                    display: flex;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    text-align: left;
+                    color: #3D3D3D;
+
+                    span.active {
+                        font-weight: 700;
+                        padding: 0 10px;
+                        color: #46A358;
+                        padding-bottom: 10px;
+                        border-bottom: 2px solid #46A358;
+                    }
+                }
+
+                p {
+                    padding-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: left;
+                    color: #727272;
+                    span{
+                        padding-top: 20px;
+                        font-weight: 700;
+                        color: #3D3D3D;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
 }
