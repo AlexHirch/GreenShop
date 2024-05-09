@@ -14,18 +14,17 @@ const Product = () => {
       <div className="product-img">
         <div className="box-img">
           <div
-            onLoad={(src) => {
-              setIma(src.target);
-            }}
             className="left"
             onClick={(e) => {
               setIma(e.target);
             }}
           >
-            <img id="1" src="./shop/2.svg" alt="" />
-            <img id="2" src="./shop/1.svg" alt="" />
-            <img id="3" src="./shop/2.svg" alt="" />
-            <img id="4" src="./shop/1.svg" alt="" />
+            <img onLoad={(src) => {
+              setIma(src.target);
+            }} id="1" src="./shop/1.svg" alt="" />
+            <img id="2" src="./shop/2.svg" alt="" />
+            <img id="3" src="./shop/1.svg" alt="" />
+            <img id="4" src="./shop/2.svg" alt="" />
           </div>
           <div className="right">
             <img src={ima.src} alt="" />

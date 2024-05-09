@@ -5,6 +5,7 @@
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 
     .Home-Shop {
+        width: 100%;
         font-size: 18px;
         font-weight: 400;
         text-align: left;
@@ -162,6 +163,7 @@
                     width: 100%;
                     height: auto;
                     display: flex;
+                    flex-wrap: wrap;
                     gap: 20px;
 
                     form {
@@ -374,6 +376,23 @@
                         color: #3D3D3D;
                         font-size: 16px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .Shop{
+        .Product{
+            .product-img{
+                display: flex;
+                flex-wrap: wrap;
+                .box-img{
+                    width: 100%;
+                }
+                .img-text{
+                    width: 100%;
                 }
             }
         }
