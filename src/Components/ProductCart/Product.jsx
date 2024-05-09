@@ -1,14 +1,27 @@
 import React, { useState } from "react";
 import "./Product.scss";
 import { Rate } from "antd";
+import { FaFacebookF, FaLinkedinIn, FaMinus, FaPlus } from "react-icons/fa";
+import { FiHeart } from "react-icons/fi";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { BsTwitterX } from "react-icons/bs";
 
 const Product = () => {
-  const [ima, setIma] = useState([])
+  const [ima, setIma] = useState([]);
+  const [inputValue, setInputValue] = useState(1);
   return (
     <div className="Product">
       <div className="product-img">
         <div className="box-img">
-          <div onLoad={(src)=>{setIma(src.target);}} className="left" onClick={(e)=>{setIma(e.target);}}>
+          <div
+            onLoad={(src) => {
+              setIma(src.target);
+            }}
+            className="left"
+            onClick={(e) => {
+              setIma(e.target);
+            }}
+          >
             <img id="1" src="./shop/2.svg" alt="" />
             <img id="2" src="./shop/1.svg" alt="" />
             <img id="3" src="./shop/2.svg" alt="" />
@@ -20,15 +33,76 @@ const Product = () => {
         </div>
         <div className="img-text">
           <div className="text-1">
-            <div className="nameProduct"></div>
+            <div className="nameProduct">
+              <p>Barberton Daisy</p>
+              <p>$119.00</p>
+            </div>
             <div className="rate">
-              <Rate/>
+              <p>
+                <Rate /> 19 Customer Review
+              </p>
             </div>
           </div>
-          <div className="text-2"></div>
-          <div className="text-3"></div>
-          <div className="text-4"></div>
-          <div className="text-5"></div>
+          <div className="text-2">
+            <p>Short Description:</p>
+            <p>
+              The ceramic cylinder planters come with a wooden stand to help
+              elevate your plants off the ground. The ceramic cylinder planters
+              come with a wooden stand to help elevate your plants off the
+              ground.{" "}
+            </p>
+          </div>
+          <div className="size">
+            <p>Size</p>
+            <div className="bttn">
+              <button className="active">S</button>
+              <button>M</button>
+              <button>L</button>
+              <button>XL</button>
+            </div>
+          </div>
+          <div className="text-4">
+            <form action="">
+              <p
+                onClick={() => {
+                  inputValue < 2 ? "" : setInputValue(inputValue - 1);
+                }}
+              >
+                <FaMinus />
+              </p>
+              <input
+                type="number"
+                min={1}
+                defaultValue={1}
+                value={inputValue}
+                name=""
+                id=""
+              />
+              <p
+                onClick={() => {
+                  setInputValue(inputValue + 1);
+                }}
+              >
+                <FaPlus />
+              </p>
+            </form>
+            <button>Buy NOW</button>
+            <button>Add to cart</button>
+            <button>
+              <FiHeart />
+            </button>
+          </div>
+          <div className="text-5">
+            <p><span>SKU</span>: 1995751877966</p>
+            <p><span>Categories</span>: Potter Plants</p>
+            <p><span>Tags</span>: Home, Garden, Plants</p>
+            <p>
+              Share this products: <FaFacebookF />
+              <AiOutlineInstagram />
+              <BsTwitterX />
+              <FaLinkedinIn />
+            </p>
+          </div>
         </div>
       </div>
       <div className="product-text">
