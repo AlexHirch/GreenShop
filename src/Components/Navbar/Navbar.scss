@@ -31,13 +31,62 @@
         align-items: center;
         gap: 20px;
         position: relative;
-        .btn:hover{
-            text-shadow: 0px 0px 10px green;
+        .btn{
+            &:first-child{
+                position: relative;
+                transition: all .2s;
+                &:hover{
+                    form{
+                        top: -10px;
+                    }
+                }
+            }
+            form{
+                position: absolute;
+                background-color: #ececec;
+                border-radius: 10px;
+                width: 260px;
+                height: 40px;
+                display: flex;
+                left: -230px;
+                top: -60px;
+                transition: all .2s;
+                input{
+                    padding-left: 10px;
+                    width: 90%;
+                    height: 40px;
+                    background-color: transparent;
+                    border: none;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    outline: none;
+                    font-size: 18px;
+                    color: #3D3D3D;
+                }
+                button{
+                    width: 50px;
+                    height: 40px;
+                    border: none;
+                    padding: 0;
+                    background-color: transparent;
+                    font-size: 20px;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 10px;
+                }
+            }
         }
         a.btn{
             font-size: 20px;
+            transition: all;
             &:hover{
-                text-shadow: 0px 0px 10px rgb(0, 0, 0);
+                color: #00ac22;
+                border-radius: 5px;
+                background-color: #46a3595f;
+                box-shadow: 0 0 15px #46A358;
+                transition: all .3s;
             }
             .like{
                 position: absolute;
@@ -55,6 +104,9 @@
                 border-radius: 10px;
                 padding: 1px;
             }
+        }
+        a.btn.active{
+            color: #00ac22;
         }
         button{
             display: flex;
