@@ -10,6 +10,7 @@ import "swiper/css/scrollbar";
 
 import { Navigation, Pagination } from "swiper/modules";
 import { FaArrowRight } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Slider = () => {
   return (
@@ -35,7 +36,7 @@ const Slider = () => {
                 Order your favorite plants!
               </p>
               <button>
-                SHOP NOW<span><FaArrowRight /></span>
+                <NavLink to={"/shop"}>SHOP NOW<span><FaArrowRight /></span></NavLink>
               </button>
             </div>
             <div className="right">

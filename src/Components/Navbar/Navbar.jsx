@@ -4,6 +4,8 @@ import { HiOutlineLogout } from "react-icons/hi";
 import { FiSearch, FiShoppingCart } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
 import { LuSettings2 } from "react-icons/lu";
+import { FaHeart, FaShoppingCart, FaUser } from "react-icons/fa";
+import { RiHome2Fill } from "react-icons/ri";
 
 const Navbar = ({ open, setOpen }) => {
   return (
@@ -52,6 +54,23 @@ const Navbar = ({ open, setOpen }) => {
         <button onClick={() => setOpen(!open)} className="LuSettings2">
           <LuSettings2 />
         </button>
+      </div>
+      <div className="navigation">
+        <ul>
+          <li>
+            <NavLink to={"/"}><RiHome2Fill /></NavLink>
+          </li>
+          <li>
+            <NavLink to={"/plant_care"}><FaHeart /></NavLink>
+          </li>
+          <li>
+            <NavLink to={"/shop"}><FaShoppingCart /></NavLink>
+          </li>
+          <li>
+            <NavLink to={"/blog"}><FaUser /></NavLink>
+          </li>
+        </ul>
+        <img src="./navmobile.svg" alt="" />
       </div>
     </>
   );
