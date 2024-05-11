@@ -159,7 +159,11 @@
         }
 
         .like {
-            top: 130px;
+            position: relative;
+            top: 0;
+            justify-content: space-between;
+            padding: 5px 10px 0 10px;
+            opacity: 1;
 
             button {
                 width: 30px;
