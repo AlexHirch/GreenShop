@@ -153,6 +153,14 @@
             width: 100%;
             bottom: 30px;
             justify-content: space-around;
+            li{
+                a{
+                    color: #5d5d5d;
+                    &.active{
+                        color: #00ac22;
+                    }
+                }
+            }
         }
         img{
             width: 100%;

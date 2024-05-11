@@ -36,7 +36,7 @@ const Navbar = ({ open, setOpen }) => {
             </form>
             <FiSearch />
           </a>
-          <NavLink to={"/shop/productcart"} className="btn">
+          <NavLink to={"/shop/shoppingcart"} className="btn">
             <FiShoppingCart /> <div className="like">6</div>{" "}
           </NavLink>
           <button>
@@ -61,8 +61,9 @@ const Navbar = ({ open, setOpen }) => {
             <NavLink to={"/"}><RiHome2Fill /></NavLink>
           </li>
           <li>
-            <NavLink to={"/plant_care"}><FaHeart /></NavLink>
+            <NavLink to={"/like"}><FaHeart /></NavLink>
           </li>
+          <li></li>
           <li>
             <NavLink to={"/shop"}><FaShoppingCart /></NavLink>
           </li>

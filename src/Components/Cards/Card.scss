@@ -1,11 +1,42 @@
 .card {
-    p.skidka{
+    .Like {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+        color: transparent;
+        transition: all .3s;
+        border-radius: 20px;
+
+        &.active {
+            color: red;
+
+            &:hover {
+                color: #b30000;
+            }
+        }
+
+        &:hover {
+            color: #3d3d3d;
+        }
+
+        &:active {
+            color: #ff9102;
+            border-radius: 20px;
+            background-color: #ff000078;
+            box-shadow: 0 0 5px #ff0000;
+        }
+    }
+
+    p.skidka {
         padding: 5px;
         background-color: #46A358;
         position: absolute;
         top: 20px;
         left: 0;
     }
+
     width: 300px;
     height: auto;
     padding: 10px;
@@ -13,13 +44,16 @@
     background-color: rgba(239, 239, 239, 0.774);
     margin-bottom: 20px;
     position: relative;
-    &:hover{
+
+    &:hover {
         background-color: rgba(213, 219, 211, 0.774);
-        .like{
+
+        .like {
             opacity: 1;
         }
     }
-    .like{
+
+    .like {
         width: 100%;
         height: auto;
         display: flex;
@@ -29,26 +63,34 @@
         top: 230px;
         transition: all .5s;
         opacity: 0;
-        button{
+
+        button {
             background-color: rgba(195, 201, 194, 0.795);
             border: none;
-            box-shadow: 0 0 10px rgb(177, 183, 175);
             border-radius: 7px;
             display: flex;
-            align-items: center;    
+            align-items: center;
             justify-content: center;
             font-size: 24px;
             width: 40px;
             height: 40px;
             color: white;
             transition: all .3s;
-            &:hover{
+            &:hover {
                 color: #00ff33;
+                box-shadow: 0 0 10px rgb(177, 183, 175);
                 background-color: #00b32478;
                 box-shadow: 0 0 10px #00ca287c;
             }
+
+            &:active {
+                background-color: #46A358;
+                box-shadow: 0 0 10px rgb(45, 126, 18);
+            }
+
         }
     }
+
     p {
         padding: 10px 0;
         color: #3D3D3D;
@@ -66,7 +108,8 @@
             text-align: left;
 
         }
-        span{
+
+        span {
             text-decoration: line-through;
             color: #a1a1a1;
             font-weight: 400;
@@ -84,9 +127,41 @@
         padding: 5px;
         width: 170px;
         height: auto;
-        .like{
+
+        .Like {
+            display: flex;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 25px;
+            color: #a1a1a1;
+            transition: all .3s;
+            border-radius: 20px;
+
+            &.active {
+                color: red;
+
+                &:hover {
+                    color: #b30000;
+                }
+            }
+
+            &:hover {
+                color: #3d3d3d;
+            }
+
+            &:active {
+                color: #ff9102;
+                border-radius: 20px;
+                background-color: #ff000078;
+                box-shadow: 0 0 5px #ff0000;
+            }
+        }
+
+        .like {
             top: 130px;
-            button{
+
+            button {
                 width: 30px;
                 height: 30px;
             }
