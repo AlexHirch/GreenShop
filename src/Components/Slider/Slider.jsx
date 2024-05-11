@@ -40,8 +40,8 @@ const Slider = () => {
               </button>
             </div>
             <div className="right">
-              <img src="./img/aa1.png" alt="" />
-              <img src="./img/aa1.png" alt="" />
+              <img src="../img/aa1.png" alt="" />
+              <img src="../img/aa1.png" alt="" />
             </div>
           </div>
         </SwiperSlide>

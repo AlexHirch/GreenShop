@@ -14,7 +14,7 @@ const Cards = () => {
       <p className="skidka">
         100% OFF
       </p>
-      <img src="./img/product-21-320x320 1.png" alt="" />
+      <img src="../img/product-21-320x320 1.png" alt="" />
       <div className="like">
         <button>
           <FiShoppingCart />

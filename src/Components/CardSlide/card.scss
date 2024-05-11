@@ -1,0 +1,11 @@
+.CardSlide{
+    padding-top: 40px;
+    .card{
+        width: 240px;
+        padding: 5px;
+        margin-bottom: 40px;
+        .like{
+            display: none;
+        }
+    }
+}
