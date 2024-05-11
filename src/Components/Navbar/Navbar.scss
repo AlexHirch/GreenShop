@@ -17,6 +17,7 @@
                 font-size: 18px;
                 padding: 15px 0px;
                 border-bottom: 2px solid transparent;
+                transition: all .5s;
             }
             a.active{
                 color: #46A358;
@@ -157,6 +158,7 @@
                 a{
                     color: #5d5d5d;
                     font-size: 22px;
+                    transition: all .5s;
                     &.active{
                         color: #00ac22;
                     }
