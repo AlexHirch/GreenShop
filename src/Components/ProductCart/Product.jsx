@@ -19,9 +19,14 @@ const Product = () => {
               setIma(e.target);
             }}
           >
-            <img onLoad={(src) => {
-              setIma(src.target);
-            }} id="1" src="./shop/1.svg" alt="" />
+            <img
+              onLoad={(src) => {
+                setIma(src.target);
+              }}
+              id="1"
+              src="./shop/1.svg"
+              alt=""
+            />
             <img id="2" src="./shop/2.svg" alt="" />
             <img id="3" src="./shop/1.svg" alt="" />
             <img id="4" src="./shop/2.svg" alt="" />
@@ -37,9 +42,8 @@ const Product = () => {
               <p>$119.00</p>
             </div>
             <div className="rate">
-              <p>
-                <Rate /> 19 Customer Review
-              </p>
+              <Rate />
+              <p>19 Customer Review</p>
             </div>
           </div>
           <div className="text-2">
@@ -92,9 +96,15 @@ const Product = () => {
             </button>
           </div>
           <div className="text-5">
-            <p><span>SKU</span>: 1995751877966</p>
-            <p><span>Categories</span>: Potter Plants</p>
-            <p><span>Tags</span>: Home, Garden, Plants</p>
+            <p>
+              <span>SKU</span>: 1995751877966
+            </p>
+            <p>
+              <span>Categories</span>: Potter Plants
+            </p>
+            <p>
+              <span>Tags</span>: Home, Garden, Plants
+            </p>
             <p>
               Share this products: <FaFacebookF />
               <AiOutlineInstagram />
