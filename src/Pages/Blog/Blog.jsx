@@ -7,7 +7,7 @@ const Blog = () => {
 
     <div className="Blog">
       <p onClick={()=>{setA1(!a1)}} className={a1 ? "active" : "" }>
-        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/16226.jpg" alt="" />
+        <img src="https://images.hdqwalls.com/download/mercedes-benz-amg-gtr-4k-pq-1920x1080.jpg" alt="" />
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolores
         corporis accusamus nisi deleniti vitae corrupti blanditiis ullam quos?
         Perspiciatis minus, tempora dolorum, eum quisquam consequatur totam
@@ -16,7 +16,7 @@ const Blog = () => {
         aliquid, minus id quasi optio omnis at tempora nihil officia!
       </p>
       <p onClick={()=>{setA1(!a1)}} className={a1 ? "" : "active" }>
-        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/16259.jpg" alt="" />
+        <img src="https://i.pinimg.com/736x/ed/88/14/ed8814e0d4a5506b7a3af987d0ff77b9.jpg" alt="" />
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolores
         corporis accusamus nisi deleniti vitae corrupti blanditiis ullam quos?
         Perspiciatis minus, tempora dolorum, eum quisquam consequatur totam

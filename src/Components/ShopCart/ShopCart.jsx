@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ShopCart.scss";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { AiOutlineDelete } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const ShopCart = () => {
   const [inval, setInval] = useState(1);
@@ -153,7 +154,7 @@ const ShopCart = () => {
             <p>Coupon Discount<span>(-) 00.00</span></p>
             <p>Shiping<span>$16.00</span></p>
             <p className="total">Total<span>$2,699.00</span></p>
-            <button>Proceed To Checkout</button>
+            <NavLink className={"button"} to="/shop/ceckout">Proceed To Checkout</NavLink>
             <button>Continue Shopping</button>
           </div>
         </div>

@@ -37,7 +37,7 @@ const Navbar = ({ open, setOpen }) => {
             <FiSearch />
           </a>
           <NavLink to={"/shop/shoppingcart"} className="btn">
-            <FiShoppingCart /> <div className="like">6</div>{" "}
+            <FiShoppingCart /> <div className="like">3</div>{" "}
           </NavLink>
           <button>
             <HiOutlineLogout /> <span>Login</span>
@@ -65,7 +65,7 @@ const Navbar = ({ open, setOpen }) => {
           </li>
           <li></li>
           <li>
-            <NavLink to={"/shop"}><FaShoppingCart /></NavLink>
+            <NavLink to={"/shop/shoppingcart"}><FaShoppingCart /></NavLink>
           </li>
           <li>
             <NavLink to={"/blog"}><FaUser /></NavLink>

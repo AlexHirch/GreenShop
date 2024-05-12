@@ -5,6 +5,7 @@ import { FaFacebookF, FaLinkedinIn, FaMinus, FaPlus } from "react-icons/fa";
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { BsTwitterX } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 const Product = () => {
   const [ima, setIma] = useState([]);
@@ -89,7 +90,7 @@ const Product = () => {
                 <FaPlus />
               </p>
             </form>
-            <button>Buy NOW</button>
+            <NavLink className={"button"} to={'/shop/shoppingcart'}>Buy NOW</NavLink>
             <button>Add to cart</button>
             <button>
               <FiHeart />

@@ -9,6 +9,7 @@ import Blog from '../Pages/Blog/Blog';
 import Footer from '../Components/Footer/Footer'
 import ShopingCart from '../Pages/ShopingCart/ShopingCart'
 import Like from '../Pages/Like/Like'
+import Checkout from '../Components/Checkout/Checkout'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
         <Route path='/plant_care' element={<PlantCare/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/shop/shoppingcart' element={<ShopingCart/>} />
+        <Route path='/shop/ceckout' element={<Checkout/>} />
         <Route path='/like' element={<Like/>} />
       </Routes>
       <Footer/>

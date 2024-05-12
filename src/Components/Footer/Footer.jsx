@@ -22,8 +22,8 @@ const Footer = () => {
         <div className="top">
           <div className="top-1">
             <div className="img">
-              <img src="./img/cactus.svg" alt="" />
-              <img src="./img/cactus1.svg" alt="" />
+              <img src="../img/cactus.svg" alt="" />
+              <img src="../img/cactus1.svg" alt="" />
               <img src="" alt="" />
             </div>
             <p>Garden Care</p>
@@ -34,8 +34,8 @@ const Footer = () => {
           </div>
           <div className="top-2">
             <div className="img">
-              <img src="./img/Frame (4).svg" alt="" />
-              <img src="./img/Frame (3).svg" alt="" />
+              <img src="../img/Frame (4).svg" alt="" />
+              <img src="../img/Frame (3).svg" alt="" />
               <img src="" alt="" />
             </div>
             <p>Garden Care</p>
@@ -46,8 +46,8 @@ const Footer = () => {
           </div>
           <div className="top-3">
             <div className="img">
-              <img src="./img/Frame (6).svg" alt="" />
-              <img src="./img/Frame (5).svg" alt="" />
+              <img src="../img/Frame (6).svg" alt="" />
+              <img src="../img/Frame (5).svg" alt="" />
               <img src="" alt="" />
             </div>
             <p>Garden Care</p>
