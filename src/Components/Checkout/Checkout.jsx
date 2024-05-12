@@ -65,13 +65,15 @@ const Checkout = () => {
             </span>
           </div>
         </div>
-        <p className="ordernotes"><span>Order notes (optional)</span>
-        <input type="text" multiple />
+        <p className="ordernotes">
+          <span>Order notes (optional)</span>
+          <input type="text" multiple />
         </p>
       </div>
       <div className="order">
         <div className="ShopCart">
           <div className="carts">
+            <h3>Your Order</h3><br />
             <p className="list">
               <span>Products</span>
               <span>Subtotal</span>
@@ -85,15 +87,11 @@ const Checkout = () => {
                   <span>SKU</span>: 1995751877966
                 </span>
               </p>
+              <p>(2x)</p>
+              <p>$238.00</p>
             </div>
           </div>
           <div className="cartTotal">
-            <p className="list">Cart Totals</p>
-            <p>Coupon Apply</p>
-            <div className="form">
-              <input type="text" placeholder="Enter coupon code here..." />
-              <button>Apply</button>
-            </div>
             <div className="sub">
               <p>
                 Subtotal<span>$2,683.00</span>
@@ -107,10 +105,7 @@ const Checkout = () => {
               <p className="total">
                 Total<span>$2,699.00</span>
               </p>
-              <NavLink className={"button"} to="/shop/ceckout">
-                Proceed To Checkout
-              </NavLink>
-              <button>Continue Shopping</button>
+              <button>Place Order</button>
             </div>
           </div>
         </div>
