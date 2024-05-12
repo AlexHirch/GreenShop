@@ -9,3 +9,31 @@
         }
     }
 }
+
+@media screen and (max-width:600px) {
+    .CardSlide{
+        padding-top: 10px;
+        .card{
+            width: 100px;
+            padding: 5px;
+            margin-bottom: 40px;
+            font-size: 12px;
+            .Like{
+                display: none;
+            }
+            p.skidka{
+                height: auto;
+                padding: 2px;
+                font-size: 5px;
+                top: 5px;
+            }
+            p{
+                font-size: 8px;
+                padding: 0;
+            }
+            .like{
+                display: none;
+            }
+        }
+    }
+}

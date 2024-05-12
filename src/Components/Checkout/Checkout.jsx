@@ -65,8 +65,8 @@ const Checkout = () => {
             </span>
           </div>
         </div>
-        <p className="ordernotes"><span>Order notes (optional)</span> <br />
-        <input type="text" />
+        <p className="ordernotes"><span>Order notes (optional)</span>
+        <input type="text" multiple />
         </p>
       </div>
       <div className="order">

@@ -7,7 +7,7 @@ import { LuSettings2 } from "react-icons/lu";
 import { FaHeart, FaShoppingCart, FaUser } from "react-icons/fa";
 import { RiHome2Fill } from "react-icons/ri";
 
-const Navbar = ({ open, setOpen }) => {
+const Navbar = ({ open, setOpen, setCount, count }) => {
   return (
     <>
       <div className="Navbar">
@@ -39,7 +39,7 @@ const Navbar = ({ open, setOpen }) => {
           <NavLink to={"/shop/shoppingcart"} className="btn">
             <FiShoppingCart /> <div className="like">3</div>{" "}
           </NavLink>
-          <button>
+          <button onClick={()=>{setCount(!count)}}>
             <HiOutlineLogout /> <span>Login</span>
           </button>
         </div>
@@ -67,11 +67,11 @@ const Navbar = ({ open, setOpen }) => {
           <li>
             <NavLink to={"/shop/shoppingcart"}><FaShoppingCart /></NavLink>
           </li>
-          <li>
+          <li onClick={()=>{setCount(!count)}}>
             <NavLink to={"/blog"}><FaUser /></NavLink>
           </li>
         </ul>
-        <img src="./navmobile.svg" alt="" />
+        <img src="../navmobile.svg" alt="" />
       </div>
     </>
   );

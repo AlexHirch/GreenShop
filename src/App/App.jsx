@@ -10,6 +10,7 @@ import Footer from '../Components/Footer/Footer'
 import ShopingCart from '../Pages/ShopingCart/ShopingCart'
 import Like from '../Pages/Like/Like'
 import Checkout from '../Components/Checkout/Checkout'
+import Login from '../Components/Login/Login'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navbar open={open} setOpen={setOpen}/>
+      <Navbar open={open} setOpen={setOpen}  count={count} setCount={setCount}/>
+      <Login count={count} setCount={setCount}/>
       <Routes>
         <Route path='/' element={<Home open={open} setOpen={setOpen}/>}/>
         <Route path='/shop' element={<Shop/>}/>
