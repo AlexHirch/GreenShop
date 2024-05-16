@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Chek.scss";
-import { NavLink } from "react-router-dom";
+import OrderDetails from "../OrderDetails/OrderDetails";
 
 const Checkout = () => {
+  const [open, setOpen]=useState(0)
   return (
     <div className="Checkout">
       <div className="billing">
@@ -90,6 +91,30 @@ const Checkout = () => {
               <p>(2x)</p>
               <p>$238.00</p>
             </div>
+            <div className="cart">
+              <img src="../img/image 1.png" alt="" />
+              <p>
+                Barberton Daisy
+                <br />
+                <span>
+                  <span>SKU</span>: 1995751877966
+                </span>
+              </p>
+              <p>(2x)</p>
+              <p>$238.00</p>
+            </div>
+            <div className="cart">
+              <img src="../img/image 1.png" alt="" />
+              <p>
+                Barberton Daisy
+                <br />
+                <span>
+                  <span>SKU</span>: 1995751877966
+                </span>
+              </p>
+              <p>(2x)</p>
+              <p>$238.00</p>
+            </div>
           </div>
           <div className="cartTotal">
             <div className="sub">
@@ -105,11 +130,14 @@ const Checkout = () => {
               <p className="total">
                 Total<span>$2,699.00</span>
               </p>
-              <button>Place Order</button>
+              <p onClick={()=>{
+                setOpen(!open)
+              }} className="button">Place Order</p>
             </div>
           </div>
         </div>
       </div>
+      <OrderDetails open={open} setOpen={setOpen} />
     </div>
   );
 };
